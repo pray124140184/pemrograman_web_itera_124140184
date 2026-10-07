@@ -37,7 +37,7 @@ PRAY FEBRY VALENTINE_124140184_pertemuan1/
 └── screenshot/          # Dokumentasi screenshot
     ├── diskon.png
     ├── eror.png
-    └── form.png
+    └── formpengisian.png
 ```
 
 ## Daftar Fitur
@@ -63,11 +63,11 @@ PRAY FEBRY VALENTINE_124140184_pertemuan1/
 > Ganti dengan screenshot sendiri (minimal 3).
 
 1. Form input utama –  
-   ![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/1f07013c9297400894874591813e393d541f0117/PRAY%20FEBRY%20VALENTINE_124140184_pertemuan1/screenshot/formpengisian.png)
+   ![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/ecf07ea5e6650edd1c88491b54c7bccbd03b4d44/PRAY%20FEBRY%20VALENTINE_124140184_pertemuan1/screenshot/formpengisian.png)
 2. Validasi error –
-   ![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/1f07013c9297400894874591813e393d541f0117/PRAY%20FEBRY%20VALENTINE_124140184_pertemuan1/screenshot/eror.png)
+   ![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/ecf07ea5e6650edd1c88491b54c7bccbd03b4d44/PRAY%20FEBRY%20VALENTINE_124140184_pertemuan1/screenshot/eror.png)
 3. Hasil perhitungan & tabel –
-   ![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/1f07013c9297400894874591813e393d541f0117/PRAY%20FEBRY%20VALENTINE_124140184_pertemuan1/screenshot/diskon.png)
+   ![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/ecf07ea5e6650edd1c88491b54c7bccbd03b4d44/PRAY%20FEBRY%20VALENTINE_124140184_pertemuan1/screenshot/diskon.png)
 
 ## Penjelasan Teknis Singkat
 
