@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WarungKu POS - Kasir Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="logo">W</div>
+      <div>
+        <h1>WarungKu POS</h1>
+        <p>Kasir &amp; keranjang belanja sederhana</p>
+      </div>
+    </header>
+
+    <!-- Bar input barang -->
+    <section class="panel entry" aria-label="Form input barang">
+      <form id="entryForm" class="entry__form" novalidate>
+        <div class="control">
+          <label for="fName">Nama Barang</label>
+          <input id="fName" type="text" placeholder="mis. Air Mineral" autocomplete="off">
+          <span class="msg" id="msgName" role="alert"></span>
+        </div>
+        <div class="control">
+          <label for="fPrice">Harga Satuan</label>
+          <input id="fPrice" type="number" placeholder="min. 500" step="any">
+          <span class="msg" id="msgPrice" role="alert"></span>
+        </div>
+        <div class="control control--short">
+          <label for="fQty">Qty</label>
+          <input id="fQty" type="number" placeholder="min. 1" step="any">
+          <span class="msg" id="msgQty" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn--accent entry__btn">Tambah</button>
+      </form>
+    </section>
+
+    <div class="columns">
+      <!-- Daftar belanja -->
+      <section class="panel list" aria-label="Daftar belanja">
+        <div class="panel__head">
+          <h2>Daftar Belanja</h2>
+          <span class="count" id="itemCount">0 item</span>
+        </div>
+        <div class="scroll-x">
+          <table class="grid">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Barang</th>
+                <th class="r">Harga Satuan</th>
+                <th class="r">Qty</th>
+                <th class="r">Subtotal</th>
+                <th class="c">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="cartBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Struk / pembayaran -->
+      <aside class="panel receipt" aria-label="Pembayaran">
+        <h2>Struk Pembayaran</h2>
+
+        <div class="line"><span>Total Belanja</span><b id="outTotal">Rp 0</b></div>
+
+        <div class="promo">
+          <label for="fPromo">Kode Promo</label>
+          <div class="promo__row">
+            <input id="fPromo" type="text" placeholder="HEMAT10" autocomplete="off">
+            <button type="button" class="btn btn--ghost" id="btnPromo">Pakai</button>
+          </div>
+          <span class="hint" id="promoHint"></span>
+        </div>
+
+        <div class="line"><span id="discLabel">Diskon</span><b id="outDisc" class="green">- Rp 0</b></div>
+        <div class="line line--big"><span>Total Akhir</span><b id="outGrand">Rp 0</b></div>
+
+        <div class="control">
+          <label for="fPaid">Uang Bayar</label>
+          <input id="fPaid" type="number" placeholder="Nominal uang diterima" step="any">
+        </div>
+
+        <div class="change" id="changeBox">
+          <small>Kembalian</small>
+          <strong id="outChange">Rp 0</strong>
+          <span id="changeNote"></span>
+        </div>
+
+        <button type="button" class="btn btn--danger btn--full" id="btnReset">Transaksi Baru / Reset</button>
+      </aside>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
