@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Tugas</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div>
+        <h1>Dashboard saya</h1>
+        <p id="stat" class="muted"></p>
+      </div>
+      <div class="clock-box">
+        <p id="clock" class="clock">00:00:00</p>
+        <p id="today" class="muted small"></p>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card card-deadline">
+        <p class="label">Deadline terdekat</p>
+        <p id="dl-title" class="dl-title"></p>
+        <div class="dl-row">
+          <span id="dl-time" class="dl-time"></span>
+          <span id="dl-tag"></span>
+        </div>
+      </div>
+      <div class="card">
+        <p class="label">Kata kata hari ini</p>
+        <p id="quote-text" class="quote">Memuat kutipan...</p>
+        <p id="quote-author" class="muted small"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <form id="task-form" class="form">
+        <input id="task-title" type="text" placeholder="Tulis tugas baru" autocomplete="off">
+        <select id="task-category" aria-label="Kategori"></select>
+        <div class="group">
+          <select id="task-day" aria-label="Tanggal"></select>
+          <select id="task-month" aria-label="Bulan"></select>
+          <select id="task-year" aria-label="Tahun"></select>
+        </div>
+        <div class="group">
+          <select id="task-hour" aria-label="Jam"></select>
+          <span class="colon">:</span>
+          <select id="task-minute" aria-label="Menit"></select>
+        </div>
+        <button id="task-submit" type="submit" class="btn-primary">Tambah</button>
+        <button id="task-cancel" type="button" hidden>Batal</button>
+      </form>
+      <p id="form-error" class="error"></p>
+
+      <div id="filters" class="filters"></div>
+      <div id="task-list"></div>
+    </section>
+
+    <section class="card">
+      <p class="label">Kategori</p>
+      <div id="category-list" class="cat-list"></div>
+      <form id="category-form" class="cat-form">
+        <input id="category-name" type="text" placeholder="Nama kategori baru" autocomplete="off">
+        <button type="submit" class="btn-primary">Tambah kategori</button>
+      </form>
+      <p id="category-error" class="error"></p>
+    </section>
+  </main>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

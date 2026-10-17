@@ -1,0 +1,419 @@
+/* warna*/
+:root {
+  --bg: #f3e3f0;
+  --putih: #ffffff;
+  --teks: #2b2b2b;
+  --teks-abu: #707070;
+  --garis: #ddd8cc;
+  --utama: #e86a6a;
+  --utama-gelap: #e35a45;
+  --merah: #c0392b;
+  --kuning: #d978ba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* bagian tombol batal */
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--teks);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px 60px;
+}
+
+/* bagian judul dan jam */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.clock-box {
+  text-align: right;
+}
+
+.clock {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--utama);
+  font-variant-numeric: tabular-nums;
+}
+
+.muted {
+  margin: 0;
+  font-size: 14px;
+  color: var(--teks-abu);
+}
+
+.small {
+  font-size: 13px;
+}
+
+/* bagian kotak*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.card {
+  background-color: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+/* bagian jarak */
+.card + .card {
+  margin-top: 14px;
+}
+
+.cards .card + .card {
+  margin-top: 0;
+}
+
+.card-deadline {
+  border-left: 5px solid var(--kuning);
+}
+
+.label {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--teks-abu);
+}
+
+.dl-title {
+  margin: 10px 0 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dl-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dl-time {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--utama);
+}
+
+/* kalau uudah lewat deadline */
+.dl-time.late {
+  color: var(--merah);
+}
+
+.quote {
+  margin: 10px 0 6px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* bagian tambah tugas */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.form input[type="text"] {
+  flex: 2;
+  min-width: 160px;
+}
+
+.form select {
+  flex: 1;
+  min-width: 110px;
+}
+
+/* bagian tanggal */
+.group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form .group select {
+  flex: none;
+  min-width: 0;
+  padding: 0 8px;
+}
+
+#task-day,
+#task-hour,
+#task-minute {
+  width: 70px;
+}
+
+#task-month {
+  width: 82px;
+}
+
+#task-year {
+  width: 90px;
+}
+
+.colon {
+  font-weight: bold;
+  color: var(--teks-abu);
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input[type="text"],
+select {
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid var(--garis);
+  border-radius: 6px;
+  background-color: var(--putih);
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: 2px solid var(--utama);
+  outline-offset: -1px;
+}
+
+button {
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--garis);
+  border-radius: 6px;
+  background-color: var(--putih);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--bg);
+}
+
+.btn-primary {
+  height: 38px;
+  border-color: var(--utama);
+  background-color: var(--utama);
+  color: var(--putih);
+}
+
+.btn-primary:hover {
+  background-color: var(--utama-gelap);
+}
+
+/* bagian tinggi tombol batal*/
+#task-cancel {
+  height: 38px;
+}
+
+.error {
+  min-height: 20px;
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--merah);
+}
+
+/* bagian kategori*/
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.chip {
+  height: 30px;
+  font-size: 13px;
+  color: var(--teks-abu);
+}
+
+/* bagian tombol dipilih */
+.chip.on {
+  background-color: var(--utama);
+  border-color: var(--utama);
+  color: var(--putih);
+}
+
+/* bagian daftar tugas*/
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 4px;
+  border-bottom: 1px solid var(--garis);
+}
+
+.row .title {
+  flex: 1;
+  font-size: 15px;
+}
+
+/* bagian tugas yang udah selesai */
+.row .title.done {
+  text-decoration: line-through;
+  color: var(--teks-abu);
+}
+
+.row .date {
+  min-width: 90px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--teks-abu);
+}
+
+.row button {
+  height: 28px;
+  padding: 0 9px;
+  font-size: 12px;
+}
+
+.empty {
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: var(--teks-abu);
+}
+
+/* bagian kotak kategori */
+.tag {
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: #e7e5df;
+  color: #555555;
+}
+
+.tag-kuliah {
+  background-color: #dbe9f7;
+  color: #1f4e79;
+}
+
+.tag-infest {
+  background-color: #e6dff5;
+  color: #4a3680;
+}
+
+.tag-kmpa {
+  background-color: #dcefd9;
+  color: #2e6330;
+}
+
+/* bagian kelola kategori */
+.cat-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.cat-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* tombol x untuk hapus kategori */
+.cat-del {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--teks-abu);
+}
+
+.cat-del:hover {
+  color: var(--merah);
+  border-color: var(--merah);
+}
+
+.cat-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cat-form input[type="text"] {
+  flex: 1;
+  min-width: 160px;
+}
+
+
+/* -----*/
+
+
+input[type="checkbox"] {
+  accent-color: var(--utama);
+}
+
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+/* teks kotak di tengah */
+select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* kotak daftar pilihan */
+::picker(select) {
+  border: 1px solid var(--garis);
+  border-radius: 6px;
+  background-color: var(--putih);
+  padding: 4px;
+}
+
+select option {
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: var(--teks);
+}
+
+select option:hover,
+select option:focus {
+  background-color: var(--bg);
+}
+
+select option:checked {
+  background-color: var(--utama);
+  color: var(--putih);
+}
+
+
+select option::checkmark {
+  display: none;
+}
