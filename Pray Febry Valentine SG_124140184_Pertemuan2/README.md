@@ -35,8 +35,7 @@ Aplikasi dibuat menggunakan **HTML, CSS, dan JavaScript modern (ES6+)**. Seluruh
 
 Berikut tampilan aplikasi Dashboard Tugas yang sudah selesai dan berjalan:
 
-![Tampilan Aplikasi Dashboard Tugas](assets/screenshot.png)
-
+![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/2c7f69a0e35504bd0e583d679a3fb9b4e2841c76/Pray%20Febry%20Valentine%20SG_124140184_Pertemuan2/Dokum.jpeg)
 ---
 
 ## 3. Daftar Fitur ES6+ dan Baris Kodenya
