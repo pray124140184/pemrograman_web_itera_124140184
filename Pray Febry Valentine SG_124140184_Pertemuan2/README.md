@@ -37,7 +37,7 @@ Aplikasi ini berfungsi sebagai dashboard to-do list sederhana yang membantu maha
 
 Berikut tampilan aplikasi yang sudah dibuat:
 
-![Image Alt]()
+![Image Alt](https://github.com/pray124140184/pemrograman_web_itera_124140184/blob/1b981cd8ad1b52a0f28365052428b24214942a6d/Pray%20Febry%20Valentine%20SG_124140184_Pertemuan2/Foto/foto.jpeg)
 
 ---
 
