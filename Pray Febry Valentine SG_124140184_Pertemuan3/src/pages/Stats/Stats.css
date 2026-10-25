@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Stats Page Styles - Lunar Bloom Aesthetic
+   ========================================================================== */
+
+.stats-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.stats-title {
+  font-size: 2.35rem;
+  color: var(--text-plum);
+  margin-bottom: 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.stats-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.btn-back-home {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Grid Kartu Metrik */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.35rem;
+}
+
+.metric-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-thin);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-badge {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--text-plum);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-percent {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--pink-primary);
+}
+
+.metric-value {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-plum);
+  line-height: 1.1;
+  margin-top: 0.25rem;
+}
+
+.metric-total .metric-value {
+  color: var(--color-rose);
+}
+
+.metric-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Progress Track & Fill */
+.progress-track {
+  width: 100%;
+  height: 9px;
+  background-color: var(--pink-soft-light);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  margin-top: 0.65rem;
+  border: 1px solid var(--border-thin);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width 0.4s ease-out;
+}
+
+.fill-milik {
+  background: linear-gradient(90deg, #f2728d, #c2255c);
+}
+
+.fill-baca {
+  background: linear-gradient(90deg, #fbd0b7, #f6b48f);
+}
+
+.fill-beli {
+  background: linear-gradient(90deg, #c99fb1, #a8708a);
+}
+
+/* Kartu Breakdown Distribusi */
+.stats-breakdown-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-thin);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-subtle);
+  text-align: left;
+}
+
+.breakdown-title {
+  font-size: 1.45rem;
+  color: var(--text-plum);
+  margin-bottom: 0.35rem;
+}
+
+.breakdown-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+}
+
+.breakdown-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.breakdown-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.breakdown-name {
+  font-weight: 700;
+  color: var(--text-plum);
+}
+
+.breakdown-count {
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.empty-stats-note {
+  padding: 2.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .stats-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-title {
+    font-size: 1.95rem;
+  }
+
+  .stats-breakdown-card {
+    padding: 1.5rem 1.15rem;
+  }
+}

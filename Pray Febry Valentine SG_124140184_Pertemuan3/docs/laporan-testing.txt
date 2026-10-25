@@ -1,0 +1,39 @@
+================================================================================
+LAPORAN HASIL PENGUJIAN OTOMATIS (UNIT TESTING)
+Aplikasi Manajemen Buku Pribadi - Praktikum Pemrograman Web ITERA
+Pemilik: Pray Pray Febry Valentine SG (NIM: 124140184)
+Alat Uji: Vitest & React Testing Library (jsdom)
+================================================================================
+
+ RUN  v5.0.5 C:/Users/Adhitya Warman/Desktop/praktikumpaw/pray/PRAYPRAY_124140184_pertemuan3
+
+ ✓ src/__tests__/useBookStats.test.jsx (1 test)
+   ✓ useBookStats Custom Hook
+     ✓ menghitung total dan jumlah per status dengan benar
+
+ ✓ src/__tests__/useLocalStorage.test.jsx (2 tests)
+   ✓ useLocalStorage Custom Hook
+     ✓ menyimpan dan membaca nilai dari localStorage
+     ✓ aman terhadap data JSON yang rusak (try/catch fallback)
+
+ ✓ src/__tests__/BookList.test.jsx (1 test)
+   ✓ BookList Component
+     ✓ menampilkan daftar buku dan pesan kosong bila tidak ada data
+
+ ✓ src/__tests__/BookFilter.test.jsx (1 test)
+   ✓ BookFilter Component
+     ✓ memanggil perubahan filter saat tombol diklik
+
+ ✓ src/__tests__/BookForm.test.jsx (2 tests)
+   ✓ BookForm Component
+     ✓ menampilkan pesan error saat judul atau penulis kosong
+     ✓ memanggil handler submit dengan data yang benar saat input valid
+
+--------------------------------------------------------------------------------
+ Test Files  5 passed (5)
+      Tests  7 passed (7)
+   Start at  22:35:38
+   Duration  3.52s
+================================================================================
+STATUS: SEMUA PENGUJIAN BERHASIL (100% LULUS)
+================================================================================

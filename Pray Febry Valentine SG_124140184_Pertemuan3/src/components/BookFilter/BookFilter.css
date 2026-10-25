@@ -1,0 +1,165 @@
+/* ==========================================================================
+   BookFilter Component Styles - Lunar Bloom Aesthetic
+   ========================================================================== */
+
+.book-filter-container {
+  background-color: #ffffff;
+  border: 1px solid var(--border-thin);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: box-shadow var(--transition-fast);
+}
+
+.book-filter-container:hover {
+  box-shadow: var(--shadow-card);
+}
+
+/* Kolom Pencarian */
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+
+.search-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-plum);
+  letter-spacing: 0.02em;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.15rem;
+  width: 18px;
+  height: 18px;
+  color: var(--pink-primary);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.85rem 2.75rem 0.85rem 2.85rem;
+  font-size: 0.95rem;
+  color: var(--text-plum);
+  background-color: var(--pink-soft-light);
+  border: 1.5px solid var(--border-thin);
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-fast);
+}
+
+.search-input::placeholder {
+  color: #ba96a6;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.search-input:focus {
+  background-color: #ffffff;
+  border-color: var(--pink-primary);
+  box-shadow: 0 0 0 3px rgba(242, 114, 141, 0.22);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: var(--radius-pill);
+  transition: color var(--transition-fast);
+}
+
+.search-clear-btn:hover {
+  color: var(--color-rose);
+}
+
+/* Tombol Filter */
+.filter-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-plum);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filter-btn {
+  background-color: #ffffff;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-thin);
+  border-radius: var(--radius-pill);
+  padding: 0.55rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(230, 130, 160, 0.05);
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  background-color: var(--pink-soft);
+  border-color: var(--pink-primary);
+  color: var(--color-rose);
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #ffaec0 0%, #f77f9e 100%);
+  color: #ffffff;
+  border-color: transparent;
+  font-weight: 700;
+  box-shadow: var(--shadow-btn);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .book-filter-container {
+    padding: 1.25rem 1rem;
+  }
+
+  .filter-buttons-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .filter-buttons {
+    width: 100%;
+  }
+
+  .filter-btn {
+    flex: 1 1 calc(50% - 0.6rem);
+    text-align: center;
+  }
+}
