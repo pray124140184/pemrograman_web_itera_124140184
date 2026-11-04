@@ -15,7 +15,7 @@
 | **Program Studi** | Teknik Informatika |
 | **Mata Kuliah** | Praktikum Pengembangan Aplikasi Web |
 | **Pertemuan** | 4 (Dasar Pemrograman Python) |
-| **Repository / Direktori** | `Pray_124140184_Pertemuan4` |
+| **Repository / Direktori** | `Pray Febry Valentine SG_124140184_Pertemuan4` |
 
 ---
 
@@ -102,9 +102,9 @@ python --version
 
 ### Langkah Menjalankan Skrip:
 
-Buka terminal (Command Prompt, PowerShell, atau Terminal VS Code), lalu pastikan posisi direktori aktif berada pada folder `Pray_124140184_Pertemuan4`:
+Buka terminal (Command Prompt, PowerShell, atau Terminal VS Code), lalu pastikan posisi direktori aktif berada pada folder `Pray Febry Valentine SG_124140184_Pertemuan4`:
 ```bash
-cd Pray_124140184_Pertemuan4
+cd Pray Febry Valentine SG_124140184_Pertemuan4
 ```
 
 #### A. Menjalankan Soal 1 (Program Penghitung BMI)
@@ -202,7 +202,7 @@ Seluruh berkas Python dalam tugas ini disusun dengan mematuhi kaidah penulisan s
 ## Struktur Direktori Berkas
 
 ```text
-Pray_124140184_Pertemuan4/
+Pray Febry Valentine SG_124140184_Pertemuan4/
 │
 ├── screenshots/
 │   ├── math_operations.png         # Screenshot eksekusi Soal 3 (main.py)
